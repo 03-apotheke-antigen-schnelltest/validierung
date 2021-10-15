@@ -31,7 +31,21 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-
+<style>
+	.cpnb-m-cookies-floatButtonPosition_bottom_left {
+    left: 20px;
+}
+.cpnb-m-cookies-floatButton {
+    position: fixed;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .75s;
+    -moz-transition: .75s;
+    transition: .75s;
+    z-index: 9999;
+}
+</style>
   <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
   <script>
 
@@ -71,7 +85,7 @@
 			}
 
 				window.coronaclickindex = 0;
-				$('#qrcode').qrcode({width: 256,height: 256, text: "https://apothekedroote.github.io/antigen-schnelltest?"+id });
+				$('#qrcode').qrcode({width: 256,height: 256, text: "https://03-apotheke-antigen-schnelltest.github.io/validierung/?"+id });
 
 				$( "a.corona-logo" ).dblclick(function() {
 					window.coronaclickindex++;
@@ -396,4 +410,9 @@
 
 
                                 </div>
-                            </div></body></html>
+                            </div>
+						
+						
+							<div onclick="cpnb_m_openModal()" class="cpnb-m-cookies-floatButton cpnb-m-cookies-floatButtonPosition_bottom_left"><div class="cpnb-m-cookies-floatButton-icon" data-balloon="Cookie Manager" data-balloon-pos="right"><img alt="Cookies manager" class="cpnb-m-cookies-floatButton-icon-img" src="cpnb-cookies-manager-icon-1-64x64.png"></div></div>
+						
+						</body></html>
